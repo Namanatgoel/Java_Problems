@@ -1,0 +1,35 @@
+package questions;
+/*
+ * Smart Home Security System
+Create a package smarthome.security containing an abstract class SecurityDevice with attributes:
+deviceId (String), deviceName (String), status (boolean).
+
+a) Implement a constructor to initialize attributes.
+   - Provide public getter methods.
+   - Setters for deviceId and deviceName should be private.
+
+b) Include methods:
+   - turnOn()
+   - turnOff()
+   - abstract void activateSecurityMode()
+
+c) Create subclasses:
+   - CCTVCamera with attribute recording (boolean) and method recordVideo(int duration).
+   - SmartLock with attribute locked (boolean) and methods lockDoor() and unlockDoor().
+   - MotionSensor with method detectMotion().
+
+d) Create an interface RemoteAccess in package smarthome.control with methods:
+   - remoteTurnOn()
+   - remoteTurnOff()
+
+e) CCTVCamera and SmartLock should implement RemoteAccess.
+
+f) In MotionSensor, create an inner class BatteryStatus with attribute batteryLevel (int) and method getBatteryLevel().
+
+g) Add static variable deviceCount in SecurityDevice and static method getDeviceCount().
+
+h) In Main.java create objects of CCTVCamera, SmartLock, and MotionSensor and demonstrate their functionality.
+ */
+public class Smart_home_security_system {
+
+}

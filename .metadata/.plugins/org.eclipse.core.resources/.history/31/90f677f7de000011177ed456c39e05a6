@@ -1,0 +1,21 @@
+
+public class break_as_goto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean a = true;
+		
+		first: {
+			second: {
+				third: {
+						System.out.println("Before the break.");
+						if(a) break second; // break out of second block
+						System.out.println("This won't execute");
+					   } // end of third
+				System.out.println("This is after third block.");	
+					} // end of second
+			System.out.println("This is after second block.");
+				} //end of  first
+	}
+
+}

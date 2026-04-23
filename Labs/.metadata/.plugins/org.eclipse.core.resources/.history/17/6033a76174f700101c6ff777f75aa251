@@ -1,0 +1,10 @@
+/*For given a 9-digit registration number of a CSE student, identify the year of 
+joining. Assuming the first two digits specify the year of joining. */
+import java.util.Scanner;
+public class question2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

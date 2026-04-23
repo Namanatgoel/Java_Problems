@@ -1,0 +1,41 @@
+class CourseFullException extends Exception {
+	public CourseFullException(String message) {
+		super(message);
+	}
+}
+
+class Course {
+	private String courseName;
+	private int capacity;
+	private int enrolledStudents;
+
+	public Course(String courseName, int capacity) {
+		this.courseName = courseName;
+		this.capacity = capacity;
+		this.enrolledStudents = 0;
+	}
+
+	public void enrollStudent() throws CourseFullException {
+		if (enrolledStudents >= capacity) {
+			throw new CourseFullException(
+					"Cannot enroll more, because " + courseName + " is already at full capacity of " + capacity + " !");
+		}
+		enrolledStudents++;
+		System.out.println("Student enrolled successfully! Now Current strength: " + enrolledStudents + " / " + capacity);
+	}
+}
+
+public class CourseCapacityDemo {
+	public static void main(String[] args) {
+		Course oopCourse = new Course("IOOPS", 2);
+		System.out.println("Enrolling Students");
+		try {
+			oopCourse.enrollStudent();
+			oopCourse.enrollStudent();
+			System.out.println("\n Attempting to enroll a 3rd student");
+			oopCourse.enrollStudent();
+		} catch (CourseFullException e) {
+			System.out.println("Exception Handled: " + e.getMessage());
+		}
+	}
+}

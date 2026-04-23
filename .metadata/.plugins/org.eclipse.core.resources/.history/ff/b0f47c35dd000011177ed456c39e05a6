@@ -1,0 +1,55 @@
+
+public class loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*for(int x = 10; x > 0; x--) 
+		{
+			System.out.println(x); 
+		}
+		x=20; // x not known here*/
+	//this works
+	
+		
+		int total = 0;
+		int y =0;
+		for(int x = 0; x+y < 10; x++, y++)
+		total += x + y;
+		
+		
+		int tot = 0;
+		for(int u =0, z =0; u+z <10; total += u++ + z++);
+		
+		
+		for(int a = 10; a > 0;) //Missing Pieces
+							{ 
+							System.out.println(a);
+							a--;
+							}
+		
+		
+		int b; b =10;
+		for(; b > 0; b--) //Missing Pieces
+							{ 
+							System.out.println(b);
+							}
+		
+		
+		for( ; ; )
+							System.out.println("Infinite loop");
+	
+		
+		int g[] = {10,20,30};
+		for (int d : g)
+		{
+		System.out.println(b);
+		}
+		
+		String e[]= {"anil","sunil","rahul"};
+		for (String f : e)
+		{
+		System.out.println(b);
+		} 
+	}
+
+}
