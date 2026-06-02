@@ -1,4 +1,4 @@
-package hospital.core;
+package hospital_management_system;
 
 /**
  * INTERFACE — HospitalOperations  (package: hospital.core)

@@ -1,4 +1,4 @@
-package hospital.staff;
+package hospital_management_system;
 
 /**
  * CLASS — Department  (package: hospital.staff)

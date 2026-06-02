@@ -1,4 +1,0 @@
-
-class my_exp extends Exception{
-	public SeatsNotAvailableException
-}

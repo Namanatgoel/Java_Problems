@@ -1,4 +1,0 @@
-
-class SeatsNotAvailableException extends Exception{
-	public SeatsNotAvailableException
-}

@@ -1,4 +1,4 @@
-package hospital.core;
+package hospital_management_system;
 
 import hospital.admin.RemoteMonitoring; // importing interface from a DIFFERENT package
 import java.util.ArrayList;

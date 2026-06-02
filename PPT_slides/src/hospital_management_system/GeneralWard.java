@@ -1,4 +1,4 @@
-package hospital.core;
+package hospital_management_system;
 
 import java.util.ArrayList;
 
